@@ -41,8 +41,31 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 
 | Date | Assignment | Status | Score |
 |------|-----------|--------|-------|
-| 2026-06-29 | Phase 1 · Week 1 · A1 NumPy | in progress | — |
+| 2026-06-29 | Phase 1 · Week 1 · A1 NumPy (vectorized ops + broadcasting) | ✅ done | 8.5/10 |
+| 2026-06-29 | Phase 1 · Week 1 · A2 Pandas EDA (Titanic) | ✅ done | 8/10 |
+| 2026-06-29 | Phase 1 · Week 1 · A3 Mini project (charts + writeup) | 🔜 in progress | — |
 
 ## Resources
 
-3Blue1Brown · Andrew Ng ML Specialization · Kaggle Learn · fast.ai · DeepLearning.AI short courses · Hugging Face · LangChain/LangGraph docs
+Curated, free, and watch-in-order per phase. **Bold = start here.**
+
+### Phase 1 — Python for data + math intuition (now)
+- **[Kaggle Learn — Pandas](https://www.kaggle.com/learn/pandas)** — short, hands-on, mirrors what you're doing.
+- [Corey Schafer — Pandas tutorial series](https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS) — the canonical pandas walkthrough on YouTube.
+- [pandas docs — 10 minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
+- [NumPy — broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
+- **[3Blue1Brown — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)** — intuition only, no grinding proofs. Watch ~1 video/day alongside assignments.
+
+### Phase 2 — ML fundamentals
+- **[Andrew Ng — Machine Learning Specialization (Coursera, audit free)](https://www.coursera.org/specializations/machine-learning-introduction)**
+- [StatQuest with Josh Starmer](https://www.youtube.com/@statquest) — the clearest explanations of ML/stats concepts anywhere.
+- [Kaggle Learn — Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning)
+
+### Phase 3 — Deep learning
+- **[3Blue1Brown — Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)**
+- [fast.ai — Practical Deep Learning for Coders](https://course.fast.ai/)
+
+### Phase 4 — Applied AI / LLMs (the destination)
+- [DeepLearning.AI — short courses](https://www.deeplearning.ai/short-courses/) (RAG, agents, LangChain — free)
+- [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course)
+- [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/)
