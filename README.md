@@ -63,7 +63,9 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 | 2026-06-29 | Phase 2 · P2-A5 Tool calling (the foundation of agents) | ✅ done | 10/10 |
 | 2026-06-29 | Phase 2 · P2-A6 Build an agent (the multi-step loop) | ✅ done | 10/10 |
 | 2026-06-29 | Phase 2 · P2-A7 The same agent, in LangGraph | ✅ done | 9.5/10 |
-| 2026-06-29 | Phase 2 · P2-A8 Evaluate your RAG system (capstone) | 🔜 in progress | — |
+| 2026-06-29 | Phase 2 · P2-A8 Evaluate your RAG system (capstone) | ✅ done | 10/10 |
+
+> 🏁 **Phase 2 complete** — prompting, structured output, embeddings, RAG, tool calling, agents (from scratch + LangGraph), and an LLM-as-judge eval harness. Next: **Phase 3 — ship a deployed project.**
 
 ## What to learn for each task (and where)
 
