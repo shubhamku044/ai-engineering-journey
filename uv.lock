@@ -26,6 +26,7 @@ dependencies = [
     { name = "openai" },
     { name = "pandas" },
     { name = "python-dotenv" },
+    { name = "requests" },
 ]
 
 [package.metadata]
@@ -41,6 +42,7 @@ requires-dist = [
     { name = "openai", specifier = ">=2.44.0" },
     { name = "pandas", specifier = ">=3.0.4" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "requests", specifier = ">=2.34.2" },
 ]
 
 [[package]]
