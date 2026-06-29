@@ -60,7 +60,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 | 2026-06-29 | Phase 2 · P2-A2 Structured output (LLM → JSON → DataFrame) | ✅ done | 9.5/10 |
 | 2026-06-29 | Phase 2 · P2-A3 Embeddings & semantic search | ✅ done | 9.5/10 |
 | 2026-06-29 | Phase 2 · P2-A4 RAG end-to-end (retrieve + generate) | ✅ done | 10/10 |
-| 2026-06-29 | Phase 2 · P2-A5 Tool calling (the foundation of agents) | 🔜 in progress | — |
+| 2026-06-29 | Phase 2 · P2-A5 Tool calling (the foundation of agents) | ✅ done | 10/10 |
+| 2026-06-29 | Phase 2 · P2-A6 Build an agent (the multi-step loop) | 🔜 in progress | — |
 
 ## What to learn for each task (and where)
 
