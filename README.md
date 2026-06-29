@@ -43,7 +43,7 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 |------|-----------|--------|-------|
 | 2026-06-29 | Phase 1 · Week 1 · A1 NumPy (vectorized ops + broadcasting) | ✅ done | 8.5/10 |
 | 2026-06-29 | Phase 1 · Week 1 · A2 Pandas EDA (Titanic) | ✅ done | 8/10 |
-| 2026-06-29 | Phase 1 · Week 1 · A3 Mini project (charts + writeup) | 🔜 in progress | — |
+| 2026-06-29 | Phase 1 · Week 1 · A3 Mini project (charts + writeup) | ✅ done | 8/10 |
 
 ## Resources
 
