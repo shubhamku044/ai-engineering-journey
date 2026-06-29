@@ -74,7 +74,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A1 Persistent memory | ✅ done | 10/10 |
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A2 Human-in-the-loop | ✅ done | 10/10 |
-| 2026-06-30 | Phase 4 · Advanced Agents · P4-A3 Multi-agent (supervisor) | 🔜 in progress | — |
+| 2026-06-30 | Phase 4 · Advanced Agents · P4-A3 Multi-agent (supervisor) | ✅ done | 10/10 |
+| 2026-06-30 | Phase 4 · Advanced Agents · P4-A4 Reflection (self-correction) | 🔜 in progress | — |
 
 **Phase 4 — Advanced Agents** (specialization): persistent memory → human-in-the-loop → multi-agent (supervisor) → reflection.
 
