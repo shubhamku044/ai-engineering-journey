@@ -2,6 +2,8 @@
 
 My self-paced path from full-stack development into **applied AI / AI-engineering** — LLMs, RAG, agents, LangChain/LangGraph. This repo is a public learning log: every assignment, with code and notes, organized by phase and week. Mentored daily, reviewed like code.
 
+> **🎓 Roadmap complete (Phases 1–4).** From vectorized NumPy → pandas/EDA → embeddings & cosine similarity → RAG from scratch → tool calling → agents → LangGraph → LLM-as-judge evals → a deployable tool-using agent → advanced agent patterns (memory, human-in-the-loop, multi-agent supervisor, reflection). Built every layer by hand before reaching for frameworks.
+
 > Starting point: ~1 year full-stack (React/Next.js + Python/Django/Celery/Redis/Elasticsearch). Goal: ship real applied-AI systems.
 
 ## Roadmap
@@ -75,7 +77,10 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A1 Persistent memory | ✅ done | 10/10 |
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A2 Human-in-the-loop | ✅ done | 10/10 |
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A3 Multi-agent (supervisor) | ✅ done | 10/10 |
-| 2026-06-30 | Phase 4 · Advanced Agents · P4-A4 Reflection (self-correction) | 🔜 in progress | — |
+| 2026-06-30 | Phase 4 · Advanced Agents · P4-A4 Reflection (self-correction) | ✅ done | 10/10 |
+
+> 🏁 **Phase 4 complete** — persistent memory, human-in-the-loop, multi-agent supervisor, reflection.
+> 🎓 **Roadmap complete** — from NumPy basics to production-pattern agent systems, built understanding every layer.
 
 **Phase 4 — Advanced Agents** (specialization): persistent memory → human-in-the-loop → multi-agent (supervisor) → reflection.
 
