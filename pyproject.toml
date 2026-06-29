@@ -3,9 +3,11 @@ name = "ai-engineering-journey"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=0.113.0",
     "ipykernel>=7.3.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.11.0",
     "numpy>=2.5.0",
     "pandas>=3.0.4",
+    "python-dotenv>=1.2.2",
 ]

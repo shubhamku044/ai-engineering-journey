@@ -6,14 +6,15 @@ My self-paced path from full-stack development into **applied AI / AI-engineerin
 
 ## Roadmap
 
+> **Track: lean foundation → applied AI.** Goal is *AI-engineering* (building on LLMs), not ML research — so I keep the math/ML foundation thin and jump fast to building.
+
 | Phase | Focus |
 |-------|-------|
-| 1 | Python for data (NumPy/Pandas) + math *intuition* |
-| 2 | ML fundamentals (supervised learning, overfitting, metrics) |
-| 3 | Deep learning basics (PyTorch, embeddings) |
-| 4 | **Applied AI / LLMs** (prompting, RAG, vector DBs, tool calling, LangChain, LangGraph, agents, evals) ← focus |
-| 5 | Build & ship 2–3 deployed portfolio projects |
-| 6 | Specialize |
+| 1 | Python for data (NumPy/Pandas) + math *intuition* ✅ |
+| 2 | **Applied AI / LLMs** (prompting, RAG, vector DBs, tool calling, LangChain, LangGraph, agents, evals) ← focus |
+| 3 | Build & ship 2–3 deployed portfolio projects |
+| 4 | Specialize |
+| _opt_ | _Deferred deep-dives: classic ML (scikit-learn), deep-learning internals (PyTorch) — revisit only if a real need appears_ |
 
 ## Setup (uv)
 
@@ -36,6 +37,9 @@ phase-1-python-for-data/
   week-02/
     w2-a1-cosine-similarity/   # vectors + cosine similarity (the heart of RAG)
     w2-a2-pandas-for-evals/    # build & score a results table (LLM-eval shape)
+
+phase-2-applied-ai-llms/
+    p2-a1-first-llm-calls/     # first Claude API calls + prompting basics
 ```
 
 Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES.md` explaining the approach and what I learned.
@@ -51,6 +55,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 | 2026-06-29 | Phase 1 · Week 2 · W2-A2 Pandas for evals | ✅ done | 9.5/10 |
 
 > 🏁 **Phase 1 complete** — vectorized NumPy, pandas EDA, matplotlib, cosine-similarity/retrieval, and eval scoring. On to **Phase 2: Applied AI / LLMs.**
+
+| 2026-06-29 | Phase 2 · P2-A1 First LLM calls + prompting | 🔜 in progress | — |
 
 ## What to learn for each task (and where)
 
@@ -75,23 +81,20 @@ Study the "learn" column *before* attempting the task. Each links to the minimum
 
 Curated, free, and watch-in-order per phase. **Bold = start here.**
 
-### Phase 1 — Python for data + math intuition (now)
+### Phase 1 — Python for data + math intuition ✅
 - **[Kaggle Learn — Pandas](https://www.kaggle.com/learn/pandas)** — short, hands-on, mirrors what you're doing.
 - [Corey Schafer — Pandas tutorial series](https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS) — the canonical pandas walkthrough on YouTube.
 - [pandas docs — 10 minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [NumPy — broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
-- **[3Blue1Brown — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)** — intuition only, no grinding proofs. Watch ~1 video/day alongside assignments.
+- **[3Blue1Brown — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)** — intuition only, no grinding proofs.
 
-### Phase 2 — ML fundamentals
-- **[Andrew Ng — Machine Learning Specialization (Coursera, audit free)](https://www.coursera.org/specializations/machine-learning-introduction)**
-- [StatQuest with Josh Starmer](https://www.youtube.com/@statquest) — the clearest explanations of ML/stats concepts anywhere.
-- [Kaggle Learn — Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning)
-
-### Phase 3 — Deep learning
-- **[3Blue1Brown — Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)**
-- [fast.ai — Practical Deep Learning for Coders](https://course.fast.ai/)
-
-### Phase 4 — Applied AI / LLMs (the destination)
-- [DeepLearning.AI — short courses](https://www.deeplearning.ai/short-courses/) (RAG, agents, LangChain — free)
+### Phase 2 — Applied AI / LLMs (now — the destination)
+- **[Anthropic — Claude API docs](https://docs.anthropic.com/)** — the SDK and prompting reference we build on.
+- **[Anthropic — Prompt engineering guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**
+- [DeepLearning.AI — short courses](https://www.deeplearning.ai/short-courses/) (RAG, agents, LangChain — free, ~1 hr each).
 - [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course)
-- [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/)
+- [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/) (routes into my day job).
+
+### Optional deep-dives (deferred — only if a real need appears)
+- [Andrew Ng — ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) · [StatQuest](https://www.youtube.com/@statquest) — classic ML.
+- [3Blue1Brown — Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) · [fast.ai](https://course.fast.ai/) — deep-learning internals.
