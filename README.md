@@ -73,7 +73,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 > 🏁 **Phase 3 — Research Assistant Agent shipped** (agent core + eval harness). UI/deploy intentionally skipped (deploy process documented in the project README).
 
 | 2026-06-30 | Phase 4 · Advanced Agents · P4-A1 Persistent memory | ✅ done | 10/10 |
-| 2026-06-30 | Phase 4 · Advanced Agents · P4-A2 Human-in-the-loop | 🔜 in progress | — |
+| 2026-06-30 | Phase 4 · Advanced Agents · P4-A2 Human-in-the-loop | ✅ done | 10/10 |
+| 2026-06-30 | Phase 4 · Advanced Agents · P4-A3 Multi-agent (supervisor) | 🔜 in progress | — |
 
 **Phase 4 — Advanced Agents** (specialization): persistent memory → human-in-the-loop → multi-agent (supervisor) → reflection.
 
