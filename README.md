@@ -15,6 +15,16 @@ My self-paced path from full-stack development into **applied AI / AI-engineerin
 | 5 | Build & ship 2–3 deployed portfolio projects |
 | 6 | Specialize |
 
+## Setup (uv)
+
+```bash
+uv sync                       # install deps into .venv from the lockfile
+uv run jupyter notebook       # launch Jupyter (no manual activate needed)
+uv add <package>              # add a new dependency
+```
+
+No `source .venv/bin/activate` needed — `uv run <cmd>` handles the environment.
+
 ## Structure
 
 ```
