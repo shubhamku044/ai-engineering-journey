@@ -30,9 +30,12 @@ No `source .venv/bin/activate` needed — `uv run <cmd>` handles the environment
 ```
 phase-1-python-for-data/
   week-01/
-    a1-numpy/            # vectorized NumPy ops
-    a2-pandas-titanic/   # Titanic EDA
-    a3-mini-project/     # charts + writeup
+    a1-numpy/                  # vectorized NumPy ops
+    a2-pandas-titanic/         # Titanic EDA
+    a3-mini-project/           # charts + writeup
+  week-02/
+    w2-a1-cosine-similarity/   # vectors + cosine similarity (the heart of RAG)
+    w2-a2-pandas-for-evals/    # build & score a results table (LLM-eval shape)
 ```
 
 Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES.md` explaining the approach and what I learned.
@@ -44,6 +47,25 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 | 2026-06-29 | Phase 1 · Week 1 · A1 NumPy (vectorized ops + broadcasting) | ✅ done | 8.5/10 |
 | 2026-06-29 | Phase 1 · Week 1 · A2 Pandas EDA (Titanic) | ✅ done | 8/10 |
 | 2026-06-29 | Phase 1 · Week 1 · A3 Mini project (charts + writeup) | ✅ done | 8/10 |
+
+## What to learn for each task (and where)
+
+Study the "learn" column *before* attempting the task. Each links to the minimum you need — don't over-study, just enough to start.
+
+### Week 1 — done ✅
+| Task | Learn this | Where |
+|------|-----------|-------|
+| A1 — NumPy | arrays, vectorized ops, `axis`, broadcasting | [NumPy: absolute beginners](https://numpy.org/doc/stable/user/absolute_beginners.html) · [broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html) |
+| A2 — Pandas EDA | DataFrame basics, `isnull`/`sum`, `groupby`, `fillna` | [Kaggle Learn — Pandas](https://www.kaggle.com/learn/pandas) · [Corey Schafer pandas](https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS) |
+| A3 — Mini project | matplotlib: `bar`/`hist`, titles & axis labels | [matplotlib — pyplot tutorial](https://matplotlib.org/stable/tutorials/pyplot.html) |
+
+### Week 2 — now 🔜
+| Task | Learn this | Where |
+|------|-----------|-------|
+| **W2-A1 — Cosine similarity** | vectors, dot product, vector length (norm), cosine similarity | [3B1B — Essence of Linear Algebra ch.1–4](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) · [3B1B — Dot products](https://www.youtube.com/watch?v=LyGKycYT2v0) · [cosine similarity (overview)](https://en.wikipedia.org/wiki/Cosine_similarity) |
+| W2-A2 — Pandas for evals | accuracy/precision/recall idea, `groupby` metrics, value_counts | [StatQuest — confusion matrix](https://www.youtube.com/watch?v=Kdsp6soqA7o) · [StatQuest — precision & recall](https://www.youtube.com/watch?v=4jRBRDbJemM) |
+
+> **How to use this:** watch/read the "where" links (aim for ~30–40 min, intuition over completeness), then open the scaffolded notebook and fill in the TODOs. Stuck? That's expected — that's where mentor review comes in.
 
 ## Resources
 
