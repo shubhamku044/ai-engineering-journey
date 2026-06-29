@@ -89,8 +89,8 @@ Curated, free, and watch-in-order per phase. **Bold = start here.**
 - **[3Blue1Brown — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)** — intuition only, no grinding proofs.
 
 ### Phase 2 — Applied AI / LLMs (now — the destination)
-- **[Anthropic — Claude API docs](https://docs.anthropic.com/)** — the SDK and prompting reference we build on.
-- **[Anthropic — Prompt engineering guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)**
+- **[OpenAI — API docs](https://platform.openai.com/docs/guides/text)** — the SDK we build on (using OpenAI for now).
+- **[OpenAI — Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering)** · [Anthropic's prompt guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) (concepts transfer to either).
 - [DeepLearning.AI — short courses](https://www.deeplearning.ai/short-courses/) (RAG, agents, LangChain — free, ~1 hr each).
 - [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course)
 - [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/) (routes into my day job).
