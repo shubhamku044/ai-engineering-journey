@@ -99,7 +99,7 @@ Curated, free, and watch-in-order per phase. **Bold = start here.**
 - **[OpenAI — Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering)** · [Anthropic's prompt guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) (concepts transfer to either).
 - [DeepLearning.AI — short courses](https://www.deeplearning.ai/short-courses/) (RAG, agents, LangChain — free, ~1 hr each).
 - [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course)
-- [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/) (routes into my day job).
+- [LangChain docs](https://python.langchain.com/) · [LangGraph docs](https://langchain-ai.github.io/langgraph/)
 
 ### Optional deep-dives (deferred — only if a real need appears)
 - [Andrew Ng — ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) · [StatQuest](https://www.youtube.com/@statquest) — classic ML.
