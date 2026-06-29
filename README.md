@@ -67,7 +67,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 
 > 🏁 **Phase 2 complete** — prompting, structured output, embeddings, RAG, tool calling, agents (from scratch + LangGraph), and an LLM-as-judge eval harness. Next: **Phase 3 — ship a deployed project.**
 
-| 2026-06-30 | Phase 3 · Research Assistant Agent · M1 Agent core | 🔜 in progress | — |
+| 2026-06-30 | Phase 3 · Research Assistant Agent · M1 Agent core | ✅ done | — |
+| 2026-06-30 | Phase 3 · Research Assistant Agent · M3 Agent evals | 🔜 in progress | — |
 
 **Phase 3 project:** [`phase-3-projects/research-agent/`](phase-3-projects/research-agent/) — a deployed tool-using agent (LangGraph + Wikipedia/calculator tools + Streamlit UI + eval harness).
 

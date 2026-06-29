@@ -8,7 +8,10 @@ Run from the terminal:
     uv run python phase-3-projects/research-agent/agent.py "How tall is Mount Everest in feet?"
 """
 
+import ast
+import operator
 import sys
+
 import requests
 from dotenv import load_dotenv
 from langchain_core.tools import tool
@@ -42,22 +45,71 @@ def wikipedia_search(query: str) -> str:
     return f"{title}: {summary.get('extract', 'No summary available.')}"
 
 
-# --- Tool 2: Calculator (YOU write this) ---
-# TODO: implement a `calculator` tool that evaluates a simple arithmetic expression
-#       (e.g. "8848 * 3.281") and returns the result.
-# SECURITY NOTE: do NOT use bare eval() — this runs on user input in a deployed app.
-#   Use a safe approach (e.g. the `ast` module to parse + evaluate only arithmetic nodes,
-#   or a restricted evaluator). Decorate it with @tool and give it a clear docstring.
+# --- Tool 2: Calculator (safe arithmetic via the `ast` module) ---
+# We parse the expression into an AST and walk only the nodes that represent
+# arithmetic. Anything else (function calls, names, attribute access, etc.) is
+# rejected — so unlike bare eval(), there is no way to run arbitrary code.
+_BIN_OPS = {
+    ast.Add: operator.add,
+    ast.Sub: operator.sub,
+    ast.Mult: operator.mul,
+    ast.Div: operator.truediv,
+    ast.FloorDiv: operator.floordiv,
+    ast.Mod: operator.mod,
+    ast.Pow: operator.pow,
+}
+_UNARY_OPS = {
+    ast.UAdd: operator.pos,
+    ast.USub: operator.neg,
+}
+
+
+def _safe_eval(node):
+    """Recursively evaluate an arithmetic-only AST node, or raise ValueError."""
+    if isinstance(node, ast.Constant):  # numbers only — no strings/bytes/etc.
+        if isinstance(node.value, bool) or not isinstance(node.value, (int, float)):
+            raise ValueError("only numeric literals are allowed")
+        return node.value
+    if isinstance(node, ast.BinOp) and type(node.op) in _BIN_OPS:
+        return _BIN_OPS[type(node.op)](_safe_eval(node.left), _safe_eval(node.right))
+    if isinstance(node, ast.UnaryOp) and type(node.op) in _UNARY_OPS:
+        return _UNARY_OPS[type(node.op)](_safe_eval(node.operand))
+    raise ValueError("unsupported expression")
+
+
+@tool
+def calculator(expression: str) -> str:
+    """Evaluate a basic arithmetic expression and return the result.
+
+    Supports + - * / // % ** , parentheses, and decimals (e.g. "8848 * 3.281").
+    Use this for any numeric computation instead of doing the math yourself.
+    """
+    try:
+        tree = ast.parse(expression, mode="eval")
+        result = _safe_eval(tree.body)
+    except ZeroDivisionError:
+        return "Error: division by zero."
+    except (ValueError, SyntaxError, TypeError):
+        return f"Error: '{expression}' is not a valid arithmetic expression."
+    return str(result)
 
 
 # --- Build the agent (YOU write this — it's your P2-A7 graph) ---
 def build_agent():
     """Return a compiled LangGraph agent with the two tools wired in."""
-    tools = [wikipedia_search]  # TODO: add your calculator once written
-    # TODO: bind tools to the llm; build a StateGraph(MessagesState) with an `agent`
-    #       node and a ToolNode; wire START -> agent, conditional edge via tools_condition,
-    #       and tools -> agent. Compile and return it.
-    raise NotImplementedError("build_agent not implemented yet")
+    tools = [wikipedia_search, calculator]
+    bound = llm.bind_tools(tools)
+
+    def agent_node(state):
+        return {"messages": [bound.invoke(state["messages"])]}
+
+    graph = StateGraph(MessagesState)
+    graph.add_node("agent", agent_node)
+    graph.add_node("tools", ToolNode(tools))
+    graph.add_edge(START, "agent")
+    graph.add_conditional_edges("agent", tools_condition)  # tool calls -> 'tools', else END
+    graph.add_edge("tools", "agent")  # loop back after running tools
+    return graph.compile()
 
 
 def run(question: str) -> str:
