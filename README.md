@@ -56,7 +56,8 @@ Each assignment folder holds a notebook (`.ipynb`) or script plus a short `NOTES
 
 > 🏁 **Phase 1 complete** — vectorized NumPy, pandas EDA, matplotlib, cosine-similarity/retrieval, and eval scoring. On to **Phase 2: Applied AI / LLMs.**
 
-| 2026-06-29 | Phase 2 · P2-A1 First LLM calls + prompting | 🔜 in progress | — |
+| 2026-06-29 | Phase 2 · P2-A1 First LLM calls + prompting | ✅ done | 8.5/10 |
+| 2026-06-29 | Phase 2 · P2-A2 Structured output (LLM → JSON → DataFrame) | 🔜 in progress | — |
 
 ## What to learn for each task (and where)
 
